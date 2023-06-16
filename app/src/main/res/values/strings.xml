@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">СИДЭ</string>
+    <string name="full_app_name">Система интеллектуальной диагностики энергообъектов</string>
+    <string name="login">Вход</string>
+    <string name="username">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="sign_in">Войти</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="email">Email</string>
+
+    <string name="wrong_username_or_password">Неправильный логин или пароль</string>
+    <string name="problems_with_connection">Проблемы с сетью</string>
+    <string name="problems_with_server">Проблемы с сервером</string>
+    <string name="wrong_email">Email некорректен</string>
+
+    <string name="processing">Обрабатывается</string>
+    <string name="finished">Обработано</string>
+    <string name="cancel">Отменить</string>
+    <string name="more">Подробнее</string>
+    <string name="delete">Удалить</string>
+    <string name="done">Обработано</string>
+    <string name="in_processing">Обрабатывается</string>
+    <string name="request">Запрос</string>
+    <string name="insulators">Изоляторы</string>
+    <string name="insulator">Изолятор</string>
+    <string name="probability">Вероятность</string>
+    <string name="extra_information">JSON представление</string>
+    <string name="confirmation">Подтверждение</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="delete_suppress">Вы точно хотите удалить это?</string>
+    <string name="create_request">Создать запрос</string>
+    <string name="requests">Запросы</string>
+    <string name="clear_all">Очистить</string>
+    <string name="delete_new_requests_suppress">Вы точно хотите очистить список?</string>
+    <string name="send">Отправить</string>
+    <string name="processed">Обработано</string>
+    <string name="cancelled">Отменено</string>
+    <string name="uploading">Загружается</string>
+    <string name="cancel_suppress">Вы уверены, что хотите отменить обработку?</string>
+    <string name="filters">Фильтры</string>
+    <string name="search">Поиск</string>
+    <string name="only_selected">Только избранное</string>
+    <string name="start_date">Начальная дата</string>
+    <string name="end_date">Конечная дата</string>
+    <string name="apply">Применить</string>
+    <string name="wrong_input">Некорректный ввод</string>
+    <string name="date_input_error">Убедитесь, что дата конца позже даты начала поиска</string>
+    <string name="defects">Дефекты</string>
+    <string name="name">Название</string>
+</resources>

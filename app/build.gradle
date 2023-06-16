@@ -1,0 +1,96 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.dbaproject'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.dbaproject"
+        minSdk 25
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    viewBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    constraints {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0") {
+            because("kotlin-stdlib-jdk7 is now a part of kotlin-stdlib")
+        }
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0") {
+            because("kotlin-stdlib-jdk8 is now a part of kotlin-stdlib")
+        }
+    }
+
+    // Какие-то очень нужные штуки
+    implementation "androidx.fragment:fragment:1.6.0"
+    implementation 'androidx.navigation:navigation-fragment:2.6.0'
+    implementation 'androidx.navigation:navigation-ui:2.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // AppCompat is the best
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+
+    // Хеширование
+    implementation 'commons-codec:commons-codec:1.13'
+
+    // LiveData для Retrofit
+    implementation "com.github.leonardoxh:retrofit2-livedata-adapter:1.1.2"
+
+    // REST
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.0'
+
+    // LiveData
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    implementation 'commons-io:commons-io:2.5'
+
+
+    def activity_version = "1.7.2"
+    implementation "androidx.activity:activity:$activity_version"
+
+    // Шифрование
+    implementation "androidx.security:security-crypto:1.0.0"
+    implementation "androidx.security:security-identity-credential:1.0.0-alpha03"
+    implementation "androidx.security:security-app-authenticator:1.0.0-alpha02"
+    androidTestImplementation "androidx.security:security-app-authenticator:1.0.0-alpha02"
+
+    // Загрузка картинок
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    // Свайп для обновления
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01"
+
+    // Expandable layout
+    implementation 'com.github.cachapa:ExpandableLayout:2.9.2'
+
+    // Zoomable ImageView
+    implementation 'com.github.MikeOrtiz:TouchImageView:1.4.1'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

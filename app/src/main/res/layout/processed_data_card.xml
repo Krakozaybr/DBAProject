@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/processedDataCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/processed_image_background"
+    android:gravity="center_vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/processedDataName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/processedDataDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/processedDataState"
+        app:layout_constraintStart_toStartOf="@+id/processedDataName"
+        app:layout_constraintTop_toBottomOf="@+id/processedDataName" />
+
+    <TextView
+        android:id="@+id/processedDataState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:text="@string/processed"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/processedDataDate"
+        app:layout_constraintEnd_toStartOf="@+id/processed_data_selected_btn" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/deleteProcessedDataBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_bucket"
+        app:layout_constraintBottom_toBottomOf="@+id/processedDataState"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/processed_data_selected_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/deleteProcessedDataBtn"
+        app:layout_constraintEnd_toStartOf="@+id/deleteProcessedDataBtn"
+        app:srcCompat="@drawable/ic_unselected" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
