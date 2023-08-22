@@ -15,7 +15,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 // Singleton made for comfortable sing retrofit2
 public class APIHelper {
     private static APIHelper instance = null;
-    private static final String STORAGE_URL = "http://10.0.2.2:8000/";
+    private static final String STORAGE_URL = "http://krakozaybr.pythonanywhere.com/";
     private static final String PROCESSING_URL = "https://side-test.dba.ooo/";
     private APIWrapper storageAPI;
     private ProcessingAPI processingAPI;
